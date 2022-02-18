@@ -1,0 +1,1084 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: gothic_regular;
+	src: url(../fonts/gothic.ttf);
+}
+
+@font-face {
+	font-family: gothic_bold;
+	src: url(../fonts/gothicb.ttf);
+}
+
+@font-face {
+	font-family: gothic_bold_italic;
+	src: url(../fonts/gothicbi.ttf);
+}
+
+@font-face {
+	font-family: gothic_italic;
+	src: url(../fonts/gothici.ttf);
+}
+
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;	
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+input {
+	outline: none;
+}
+
+body {
+	background-color: #fdfdfd;
+	font-family: gothic_regular, gothic_bold, gothic_bold_italic, gothic_italic;
+}
+
+header{
+	width: 100%;
+}
+
+header #barra{
+	background-color: #23b9a1;
+	width: 100%;
+	height: 24px;
+}
+
+header #marquesina{
+	text-align: center;
+    font-size: 17px;
+    font-family: gothic_regular;
+    color: #ffffff;
+    padding: 2px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+header #menu{
+	display: none;
+}
+
+header #logo{
+	margin: 0 auto;
+	width: 100%;
+	height: 190px;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 10px;
+	background: #ffffff;
+}
+
+header #logo #logo_svg{
+	margin: 0 auto;
+    width: 100%;
+    height: 170px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px;
+} 
+
+#contenido_login{
+	background-color: #FFFFFF;
+	width: 100%;
+	overflow: hidden;
+}
+
+#contenido_login #login {
+	margin: 0 auto 50px auto;
+	background-color: #23b9a1;
+	width: 75%;
+	max-width: 310px;
+	border-radius: 6px;
+	height: 370px;
+	text-align: center;
+}
+
+#contenido_login #login h1{
+	font-size: 22px;
+	color: #FFFFFF;
+	padding: 45px 0px 0px 0px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+#contenido_login #login h2{
+	font-size: 14px;
+	color: #FFFFFF;
+	padding: 0px 0px 30px 0px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+#contenido_login #login p{
+    font-size: 10px;
+    color: #ffffff;
+    padding: 0px 0px 5px 0px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#contenido_login #login #campo{
+	width: 100%;
+	height: 50px;
+}
+
+#contenido_login #login #campo input{
+	width: 65%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px 20px;
+    border: none;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+	text-align: center;
+}
+
+#login #campo #dato{
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+	font-size: 16px;
+}
+
+#login #campo #boton{
+	-webkit-box-shadow: 0 0 0px 1000px #d3255c inset;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+#login #recordar{
+	width: 100%;
+	padding: 40px 0px 0px 0px;
+}
+
+#login #recordar a{
+	font-size: 13px;
+	color: #FFFFFF;
+	text-decoration: none;	
+}
+
+#login #recordar a:hover{
+	text-decoration: underline;	
+}
+
+header #ver{
+	width: 100%;
+	height: 80px;
+	background-color: #f7f7f7;
+	overflow: hidden;
+}
+
+header #ver #logoadmin{
+	width: 10%;
+	height: 80px;
+	background-color: #f1f1f1;
+	text-align: center;
+	float: left;
+}
+
+header #ver #cerrar{
+	float: left;
+	width: calc(100% - 230px);
+	text-align: right;
+	margin-left: -10px;
+}
+
+header #ver #logoadmin #admin{
+	width: 80px;
+	height: auto;
+}
+
+header #menugen {
+    float: left;
+    height: 100px;
+    width: 80%;
+    overflow: hidden;
+}
+
+header #menugen nav {
+    box-sizing: border-box;
+    padding-right: 10px;
+    text-align: left;
+}
+
+header #menugen nav ul {
+    margin: 0px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+header #menugen nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+header #menugen nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+header #menugen nav ul li .select {
+    background-color: #D3255C;
+    padding: 2px 10px 2px 10px;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+header #c_ses {
+    width: 10%;
+    float: left;
+    font-family: gothic_regular;
+    text-align: center;
+}
+
+header #c_ses #boton {
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #2C368B;
+    height: 35px;
+    width: 72px;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 12px;
+    padding: 5px 0;
+}
+
+header #c_ses #boton a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#limalocal{
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+#limalocal #lateralizq{
+	width: 210px;
+	float: left;
+	overflow: hidden;
+	box-sizing: border-box;
+	background-color: #616269;
+}
+
+#limalocal #menul{
+	display: none;
+}
+
+#limalocal #lateralizq ul{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#limalocal #lateralizq ul li{
+	width: 100%;
+    height: 40px;
+    text-align: right;
+}
+
+#limalocal #lateralizq ul li:hover{
+	background-color: #4c4c50;
+}
+
+#limalocal #lateralizq ul li a{
+	text-decoration: none;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+#limalocal #lateralizq .item{
+	padding: 2px 9px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #4c4c50;
+    color: #a0a0a0;
+    height: 27px;
+}
+
+#limalocal #lateralizq .item_tit{
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #4c4c50;
+    color: #ffffff;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 11px;
+    background-color: #000000;
+    height: 25px;
+}
+
+#limalocal #lateralizq .item_subtit{
+	padding: 5px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #4c4c50;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    background-color: #343538;
+    height: 30px;
+}
+
+#limalocal #lateralizq .seleccionado_sub{
+	background-color: #036152;
+}
+
+#limalocal #lateralizq .seleccionado{
+	background-color: #31bba5;
+}
+
+#limalocal #contenido{
+	width: calc(100% - 210px);
+	float: left;
+	overflow: hidden;
+	box-sizing: border-box;
+	background-color: #ffffff;
+ }
+
+#limalocal #contenido #formulario_busqueda{
+	float: right;
+}
+
+#limalocal #contenido #formulario_busqueda input{
+	padding: 10px;
+    outline: none;
+}
+
+#limalocal #contenido #formulario_busqueda .search_btn {
+	font-size: 12px;
+    font-weight: normal;
+    color: #fff;
+    padding: 8px;
+    background: #777777;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0px 15px 1px 0px;
+}
+
+#limalocal #contenido #titulo {
+	float: left;
+    padding: 12px 12px 12px 50px;
+    font-size: 24px;
+    background-color: #fdfdfd;
+	width: 35%;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+#limalocal #contenido #botones {
+	display: inline-block;
+    width: 65%;
+    height: 50px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+	text-align: right;
+}
+
+#limalocal #contenido #botones .item_botones{
+	display: inline-block;
+    padding: 0 16px;
+}
+
+#limalocal #contenido #botones .item_botones .nuevo_btn {
+	font-size: 12px;
+    color: #fff;
+    padding: 8px;
+    background: #777777;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+	top: 11px;
+    position: relative;
+}
+
+#limalocal #contenido .boton_nuevo {
+	height: auto;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 10px;
+}
+
+#limalocal #submenu{
+    text-align: center;
+}
+
+#limalocal #submenu ul{
+    padding: 0px;
+    background: #43bcd1;
+}
+
+#limalocal #submenu ul li{
+    display: inline-block;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+#limalocal #submenu ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#limalocal #submenu ul li a:hover{
+    text-decoration: underline;
+}
+
+#limalocal #contenido #cuadro{
+	margin: 0px auto;
+	width: calc(100% - 30px);
+	padding: 20px 20px 40px 20px;
+	overflow: hidden;
+	box-sizing: border-box;
+	border: 1px solid #A0A0A0;
+	border-radius: 5px;
+}
+
+#limalocal #contenido #cuadro .nuevo_btn{
+font-size: 14px;
+    padding: 6px;
+    background-color: #5a5a5a;
+    border-radius: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#limalocal #contenido #cuadro #vacio{
+    padding: 10px;
+    overflow: hidden;
+    min-height: 200px;
+    text-align: center;
+}
+
+#limalocal #contenido #cuadro #lista_paginas{
+	width: 100%;
+	overflow: hidden;
+}
+
+#limalocal #contenido #cuadro #lista_paginas #formulario{
+	width: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+#limalocal #contenido #cuadro #edit_producto {
+    background-color: #fdfdfd;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    float: none;
+    box-sizing: border-box;
+}
+
+#limalocal #contenido #cuadro #edit_producto input[type='text']{
+	width: 450px;
+	padding: 5px;
+}
+
+#limalocal #contenido #cuadro #edit_producto .datos{
+	padding: 10px 5px;
+}
+
+#limalocal #contenido #cuadro #edit_producto .datos .imagen{
+	width: 100%;
+}
+
+#limalocal #contenido #cuadro #edit_producto .datos .imagen img{
+	width: 100%;
+	max-width: 500px;
+}
+
+#limalocal #contenido #cuadro #edit_producto .titulo_crear{
+	padding: 9px 0px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#limalocal #contenido #cuadro #edit_producto .datos .menu_select{
+	padding: 10px 0px;
+}
+
+#limalocal #contenido #cuadro #edit_producto .datos .fecha{
+	padding: 10px 10px;
+}
+
+#limalocal #contenido #cuadro #edit_producto .check{
+	font-size: 15px;
+    padding: 6px;
+}
+
+#limalocal #contenido #cuadro #form{
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#limalocal #contenido #cuadro #form #agregar_fotos{
+	margin-top: 15px;
+    margin-bottom: 15px;
+}
+#limalocal #contenido #cuadro #form #agregar_fotos p {
+    font-size: 13px;
+    padding: 4px;
+    color: #3cbca7;
+}
+
+#limalocal #contenido #cuadro .banner{
+    overflow: hidden;
+    box-sizing: border-box;
+    border-bottom: 2px solid #4c4c50;
+    margin-bottom: 17px; 
+	max-width: 1100px;
+}
+
+#limalocal #contenido #cuadro .banner .imagen{
+    width: 100%;   
+}
+
+#limalocal #contenido #cuadro .banner .imagen img{
+    width: 100%;
+    height: auto;
+}
+
+#limalocal #contenido #cuadro .banner .imagen_mob{
+    width: 100%;
+	max-width: 800px;
+}
+
+#limalocal #contenido #cuadro .banner .imagen_mob img{
+	width: 500px;
+    height: auto;
+}
+
+#limalocal #contenido #cuadro .banner .imagen_sec{
+    width: 100%;
+	max-width: 800px;
+}
+
+#limalocal #contenido #cuadro .banner .imagen_sec img{
+	width: 500px;
+    height: auto;
+}
+
+#limalocal #contenido #cuadro .banner .botonera {
+    overflow: hidden;
+    padding: 10px;
+}
+
+#limalocal #contenido #cuadro .botonera {
+	font-size: 12px;
+    padding: 21px;
+    background-color: #F4F4F4;
+    text-align: center;
+    overflow: hidden;
+    margin: 30px 0px;
+}
+
+#limalocal #contenido #cuadro .botonera .crear {
+    font-size: 16px;
+    color: #fff;
+    padding: 9px;
+    background: #4c4c50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	margin: 0px 10px 0px 10px;
+}
+
+#limalocal #contenido #cuadro .botonera a {
+	font-family: gothic_regular;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 6px;
+    background-color: #3cbca7;
+    top: 0px;
+    position: relative;
+}
+
+#limalocal #contenido #cuadro #paginas_estaticas #titulo {
+    padding: 13px 0px 0px 40px;
+    font-size: 21px;
+    background-color: #fdfdfd;
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+#limalocal #contenido #cuadro #paginas_estaticas input{
+    font-size: 18px;
+    font-family: gothic_regular;
+}
+
+#limalocal #contenido #cuadro #subtitulo{
+    font-size: 18px;
+    font-family: gothic_regular;
+    padding: 14px;
+    color: #d3255c;
+}
+
+#limalocal #contenido #cuadro #subtitulo a{
+    font-size: 18px;
+    font-family: gothic_bold;
+    padding: 14px;
+    color: #d3255c;
+	text-decoration: none;
+}
+
+#limalocal #contenido #cuadro .pedidos {
+    width: 100%;
+    float: none;
+    overflow: hidden;
+    border-bottom: 1px dotted #B7B7B7;
+}
+#limalocal #contenido #cuadro .pedidos .item {
+    float: left;
+    box-sizing: border-box;
+    font-size: 12px;
+    padding: 8px;
+    overflow: hidden;
+    border-right: 1px dashed #D1D1D1;
+}
+#limalocal #contenido #cuadro .pedidos .num {
+    width: 3%;
+}
+#limalocal #contenido #cuadro .pedidos .codigo {
+    width: 12%;
+}
+#limalocal #contenido #cuadro .pedidos .monto {
+    width: 10%;
+}
+#limalocal #contenido #cuadro .pedidos .fecha {
+    width: 9%;
+}
+#limalocal #contenido #cuadro .pedidos .cliente {
+    width: 17%;
+}
+#limalocal #contenido #cuadro .pedidos .envio {
+    width: 12%;
+}
+#limalocal #contenido #cuadro .pedidos .cupon {
+    width: 10%;
+}
+#limalocal #contenido #cuadro .pedidos .credito {
+    width: 8%;
+}
+#limalocal #contenido #cuadro .pedidos .acciones {
+    width: 15%;
+}
+#limalocal #contenido #cuadro #pedido{
+	width: 100%;
+}
+
+#limalocal #contenido #cuadro #pedido .datos{
+    padding: 7px;
+    overflow: hidden;
+}
+#limalocal #contenido #cuadro #pedido .datos .nombre {
+    width: 20%;
+    float: left;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+#limalocal #contenido #cuadro #pedido .datos .linea {
+    width: 80%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+	font-size: 13px;
+}
+#limalocal #contenido #cuadro .bloque_separa {
+    border-radius: 5px;
+    border: 1px dotted #3F3F3F;
+    padding: 15px;
+    margin-top: 10px;
+}
+#limalocal #contenido #cuadro .bloque_separa .montos {
+    padding: 15px;
+    border-bottom: 1px dotted #3F3C3C;
+    margin-bottom: 10px;
+}
+#limalocal #contenido #cuadro .bloque_separa .envio {
+    padding: 15px 15px 15px 50px;
+    border-bottom: 1px dotted #3F3C3C;
+    margin-bottom: 10px;
+}
+
+#limalocal #contenido #cuadro #titulo{
+	font-size: 18px;
+    padding: 10px;
+    width: 100%;
+}
+
+#limalocal #contenido #cuadro #formulario {
+	padding: 10px;
+}
+
+#limalocal #contenido #cuadro #formulario .activar{
+    padding: 10px;
+    background-color: #f7f7f7;
+    margin: 10px 0px;
+}
+
+#limalocal #contenido #cuadro #formulario .fecha{
+	padding: 5px;
+    margin: 5px 0px;
+}
+
+#limalocal #contenido #cuadro #formulario .funcion{
+	padding: 5px;
+    margin: 5px 0px;
+}
+
+#limalocal #contenido #cuadro #formulario textarea{
+    outline: none;
+    resize: none;
+    margin: 4px;
+    border: 1px solid #e8e8e8;
+    font-family: gothic_regular;
+    font-size: 15px;
+    padding: 6px;
+    width: 100%;
+    max-width: 600px;
+}
+
+#limalocal #contenido #cuadro #formulario #cupon{
+	padding: 10px;
+}
+
+#limalocal #contenido #cuadro #formulario #cupon input{
+    padding: 10px;
+    font-size: 19px;
+    text-transform: uppercase;
+	text-align: center;
+}
+
+#limalocal #contenido #cuadro #formulario .datos_inline {
+	padding: 7px;
+}
+
+#limalocal #contenido #cuadro #formulario #datos{
+    padding: 10px;
+}
+
+#limalocal #contenido #cuadro #promoactiva {
+	padding: 24px;
+	margin-top: 25px;
+	border-top: 4px double #000000;
+	font-family: gothic_regular;
+}
+
+#limalocal #contenido #cuadro #promoactiva #informe{
+	font-family: gothic_bold;
+    font-size: 16px;
+    padding: 6px;
+}
+
+#limalocal #contenido #cuadro #promoactiva #estado{
+    font-size: 16px;
+    padding: 6px;
+}
+
+#limalocal #contenido #cuadro #nuevo {
+    width: 100%;
+    height: 42px;
+    background-color: #fbfbfb;
+    padding: 10px 0px 0px 35px;
+    box-sizing: border-box;
+}
+
+#limalocal #contenido #cuadro #nuevo a {
+	text-decoration: none;
+    color: #cc144e;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 4px;
+    background: #dadada;
+    border-radius: 5px;
+}
+
+#limalocal #contenido #cuadro #notas_credito {
+    margin-top: 40px;
+    width: 100%;
+}
+
+#limalocal #contenido #cuadro #notas_credito .nombre_nota {
+    float: left;
+    width: 20%;
+}
+
+#limalocal #contenido #cuadro #notas_credito .fecha_nota {
+    float: left;
+    width: 15%;
+}
+
+#limalocal #contenido #cuadro #notas_credito .monto_nota {
+    float: left;
+    width: 10%;
+}
+
+#limalocal #contenido #cuadro #notas_credito .usado_nota {
+    float: left;
+    width: 10%;
+}
+
+#limalocal #contenido #cuadro #notas_credito .fecha_uso_nota {
+    float: left;
+    width: 15%;
+}
+
+#limalocal #contenido #cuadro #notas_credito .acciones_nota {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+#limalocal #contenido #cuadro #notas_credito .titulo_nota {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 35px;
+}
+
+#limalocal #contenido #cuadro #notas_credito .cont_nota {
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #838383;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+#limalocal #contenido #cuadro #msj {
+	padding: 20px;
+}
+
+#limalocal #contenido #cuadro #colores{
+	padding: 10px;
+}
+
+#limalocal #contenido #cuadro #colores #sincolor{
+	padding: 10px;
+}
+
+#limalocal #contenido #cuadro #colores #color{
+	border-top: 3px double #939393;
+    margin: 30px 0px;
+}
+
+#limalocal #contenido #cuadro #colores #color .titulo_color{
+	padding: 20px 0px 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#limalocal #contenido #cuadro #colores #color #agregar_color{
+	padding: 0px 0px 10px 20px;
+    font-size: 14px;
+    color: #3cbca7;
+}
+
+#limalocal #contenido #cuadro #colores #color .dato{
+	padding: 0px 0px 10px 20px;
+    font-size: 14px;
+}
+
+#limalocal #contenido #cuadro #colores #color .dato input[type='submit'] {
+    font-size: 13px;
+    color: #fff;
+    padding: 3px 17px;
+    background: #4c4c50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#limalocal #contenido #cuadro #colores #descripcion{
+	padding: 7px;
+    font-size: 14px;
+}
+
+#limalocal #contenido #cuadro #colores #descripcion .resalte{
+	color: #23b9a1;
+	font-weight: bold;
+}
+
+#limalocal #contenido #cuadro #boton{
+	width: 100%;
+    padding: 14px;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+#limalocal #contenido #cuadro #boton button{
+	font-size: 15px;
+    color: #fff;
+    padding: 6px;
+    background: #4c4c50;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#limalocal #contenido #cuadro .tabla_div{
+	width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#limalocal #contenido #cuadro .tabla_div .titulo_tabla_div{
+	font-size: 18px;
+    height: 32px;
+    font-family: gothic_bold;
+}
+
+#limalocal #contenido #cuadro .tabla_div .cabecera_tabla_div{
+	width: 100%;
+	height: 28px;
+}
+
+#limalocal #contenido #cuadro .tabla_div .cab_cell{
+	display: inline-flex;
+    font-family: gothic_bold;
+    height: 20px;
+    border-bottom: 1px solid #b9b9b9;
+    border-right: 1px solid #b9b9b9;
+}
+
+#limalocal #contenido #cuadro .tabla_div .tabla_cell{
+	display: inline-flex;
+    font-family: gothic_regular;
+    min-height: 23px;
+    border-bottom: 1px solid #b9b9b9;
+    border-right: 1px solid #b9b9b9;
+}
+
+#limalocal #contenido #cuadro .tabla_div .id{
+	width: 3%;
+}
+
+#limalocal #contenido #cuadro .tabla_div .nombres{
+	width: 12%;
+}
+
+#limalocal #contenido #cuadro .tabla_div .apellidos{
+	width: 18%;
+}
+
+#limalocal #contenido #cuadro .tabla_div .email{
+	width: 25%;
+}
+
+#limalocal #contenido #cuadro .tabla_div .celular{
+	width: 10%;
+}
+
+#limalocal #contenido #cuadro .tabla_div .fijo{
+	width: 10%;
+}
+
+#limalocal #contenido #cuadro #muestra{
+	padding: 30px 10px 10px 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#limalocal #contenido #cuadro #muestra .fotoedit{
+	padding: 5px;
+    float: left;
+    width: 25%;
+}
+
+#limalocal #contenido #cuadro #muestra .fotoedit .foto{
+	width: 100%;
+}
+
+#limalocal #contenido #cuadro #muestra .fotoedit .foto img{
+	width: 100%;
+}
+
+#limalocal #contenido #cuadro .opciones{
+	padding: 5px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+#limalocal #contenido #cuadro .opciones .partar{
+	display: inline-block;
+    padding: 0px 10px;
+    border-right: 1px solid #d0d0d0;
+}
+
+#limalocal #contenido #cuadro .opciones .partar a{
+	color: #23b9a1;
+}
+
+#limalocal #contenido #cuadro .opciones .partar .rojo{
+	color: #d3255c;
+}
+
+#limalocal #contenido #cuadro .opciones .partar .azuldos{
+	color: #3f51b5;
+}
+
+#limalocal #contenido #cuadro .opciones .btn_incluye{
+	background: #000;
+}
+
+#limalocal #contenido #cuadro .opciones .nombre_opcion{
+	font-size: 15px;
+    font-weight: bold;
+}
+
+footer{
+	width: 100%;
+	height: 50px;
+	background-color: #fdfdfd;
+}
+
+footer #texto{
+	text-align: center;
+	padding: 10px;
+	font-size: 13px;
+	color: #d3255c;
+}
+
+footer p{
+	color: #b9b9b9;
+	font-size: 13px;
+	text-align: center;
+	padding: 18px;
+}
+
+

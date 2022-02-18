@@ -1,0 +1,615 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family: singularity_r;
+	src: url("../fonts/gothic.ttf");
+}
+
+@font-face{
+	font-family: singularity_b;
+	src: url("../fonts/gothicb.ttf");
+}
+
+@font-face{
+	font-family: singularity_i;
+	src: url("../fonts/gothici.ttf");
+}
+
+@font-face{
+	font-family: singularity_bi;
+	src: url("../fonts/gothicbi.ttf");
+}
+
+* {
+	margin:0;
+	padding:0;
+	outline:none !important;
+}
+
+.mob {
+	display: none;	
+}
+
+.desk {
+	display: block;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+body{
+	width: 100%;
+	background: #ffffff;
+	font-family: singularity_r;
+    font-size: 14px;
+    line-height: 1;
+    color: #000000;
+}
+
+header{
+	width: 100%;
+}
+
+header #marquesina{
+	width: 100%;
+    background-color: #e5ab2d;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+header #contheader{
+	width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header #contheader #redes{
+	float: left;
+    width: 25%;
+    padding: 25px 10px 10px 10px;
+    box-sizing: border-box;
+}
+
+header #contheader #redes ul{
+	padding: 5px;
+    margin: 0;
+}
+
+header #contheader #redes ul li{
+	display: inline-block;
+    list-style: none;
+}
+
+header #contheader #redes ul li img{
+	width: 24px;
+}
+
+header #contheader #logo{
+	float: left;
+	width: 50%;
+}
+
+header #contheader #logo_header{
+    width: 360px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+header #contheader #personal{
+	float: left;
+	width: 25%
+}
+
+header #contheader #personal .sec_personal{
+	height: 30px;
+    padding: 0px 5px;
+}
+
+header #contheader #personal .sec_personal .texto_ir_tienda{
+	float: left;
+    width: calc(100% - 30px);
+    text-align: end;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 8px;
+    box-sizing: border-box;
+    color: #232b5a;
+}
+
+header #contheader #personal .sec_personal .texto_registro{
+	float: left;
+    width: calc(100% - 30px);
+    text-align: end;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 8px;
+    box-sizing: border-box;
+    color: #232b5a;
+}
+
+header #contheader #personal .sec_personal .ico_ir_tienda{
+	float: left;
+    width: 30px;
+}
+
+header #contheader #personal .sec_personal .ico_registro{
+	float: left;
+    width: 30px;
+}
+
+header #contheader #personal .sec_personal #buscar{
+	height: 30px;
+}
+
+header #contheader #personal .sec_personal #buscar input {
+    height: 30px;
+    width: calc(100% - 30px);
+    float: left;
+    box-sizing: border-box;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #2a3057;
+    font-size: 12px;
+}
+
+header #contheader #personal .sec_personal #buscar button {
+    width: 30px;
+    float: left;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+header #menu{
+	width: 100%;
+    border-top: 3px solid #e5ab2d;
+    text-align: center;
+}
+
+header #menu nav {
+    width: 100%;
+}
+
+header #menu nav ul {
+    padding: 0px;
+	margin: 0;
+}
+
+header #menu nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 7px 15px;
+}
+
+header #menu nav ul li a.seleccionado{
+    padding: 5px 10px;
+}
+
+header #menu nav ul li a{
+	color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+header #menu nav ul li a:hover{
+	text-decoration: underline;
+}
+
+header #menu nav ul li:hover .children {
+	display: block;
+}
+
+header #menu nav ul li .children {
+	display: none;
+    background: #e8e8e8;
+    position: absolute;
+    min-width: 185px;
+    max-width: 350px;
+    padding: 2px 5px;
+    z-index: 10;
+    margin-top: 6px;
+}
+
+header #menu nav ul li .children li {
+	display: block;
+    padding: 8px 4px;
+    text-align: left;
+}
+
+header #menu nav ul li .children a{
+	color: #000000;
+}
+
+header #menu nav ul li .children a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+header #menu nav ul li .children li:hover {
+	background-color: #A3A3A3;
+}
+
+#contenedor {
+	width: 100%;
+}
+
+#contenedor #proximos_inicios{
+	margin-top: 40px;
+    width: 100%;
+    background-color: #f6f6f6;
+	margin-bottom: 40px;
+}
+
+#contenedor #proximos_inicios #titulo_proximos{
+	text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #232b5a;
+}
+
+#contenedor #proximos_inicios #cursos_cont{
+	width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0px 0 40px 0;
+}
+
+#contenedor #proximos_inicios #cursos_cont .curso{
+	float: left;
+    width: calc(25% - 20px);
+    padding: 20px;
+    margin: 10px;
+    background-color: #cecece;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+#contenedor #proximos_inicios #cursos_cont .curso .imagen{
+	width: 100%;
+}
+
+#contenedor #proximos_inicios #cursos_cont .curso .titulo_curso{
+	width: 100%;
+	padding: 10px 0;
+    font-family: 'singularity_b';
+    color: #232b5a;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#contenedor #proximos_inicios #cursos_cont .curso .descripcion_curso{
+	font-size: 14px;
+    color: #232b5a;
+    font-family: 'singularity_r';
+    line-height: 20px;
+    height: 170px;
+    overflow: hidden;
+}
+
+#contenedor #proximos_inicios #cursos_cont .curso .boton_curso{
+	text-align: end;
+}
+
+#contenedor #proximos_inicios #cursos_cont .curso .boton_curso a{
+	background-color: #406bb2;
+    color: #ffffff;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+
+#contenedor #docentes{
+	width: 100%;
+    padding: 10px 0 40px 0;
+}
+
+#contenedor #docentes #cont_docentes{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#contenedor #docentes #cont_docentes .docente{
+	background-color: #dadfe9;
+    border-radius: 25px;
+    border: 15px solid #ffffff;
+}
+
+#contenedor #docentes #cont_docentes .docente .foto_docente{
+	border: 5px solid #232b5a;
+    border-radius: 35px;
+    overflow: hidden;
+    margin: 20px 40px 10px 40px;
+}
+
+#contenedor #docentes #cont_docentes .docente .nombre{
+	text-transform: uppercase;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'singularity_b';
+    color: #232b5a;
+}
+
+#contenedor #docentes #cont_docentes .docente .btn_lkd{
+	text-align: end;
+    padding: 0px 30px;
+}
+
+#contenedor #docentes #cont_docentes .docente .btn_lkd img{
+	width: 90px;
+    padding: 10px;
+}
+
+#contenedor .cont_curso{
+	width: 100%;
+    max-width: 1200px;
+    min-height: 400px;
+    padding: 20px 0;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#contenedor .cont_curso .curso{
+	float: left;
+    width: calc(100% - 250px);
+}
+
+#contenedor .cont_curso .curso .nombre_curso{
+	text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #2a2f59;
+    padding: 20px;
+}
+
+#contenedor .cont_curso .mas_info{
+	float: left;
+    width: 250px;
+    padding: 60px 0 0 0;
+}
+
+footer{
+	width: 100%;
+    border-top: 35px solid #406bb2
+}
+
+footer #copy{
+	width: 100%;
+    padding: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #2a2f59;
+    border-top: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 10px;
+}
+
+footer #medios_de_pago{
+	background-color: #406bb2;
+    border-top: 3px solid #ffffff;
+    text-align: center;
+}
+
+footer #medios_de_pago .tarjetas{
+	width: 100%;
+    padding: 5px 0;
+}
+
+footer #medios_de_pago .tarjetas .tarjeta{
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+footer #medios_de_pago .tarjetas .tarjeta img{
+	width: 65px;
+}
+
+footer #secciones_footer{
+	background-color: #2a2f59;
+    border-top: 1px solid #ffffff;
+}
+
+footer #secciones_footer .cont_sec{
+	width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 40px 0 70px 0;
+}
+
+footer #secciones_footer .cont_sec .seccion{
+	float: left;
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+footer #secciones_footer .cont_sec .seccion .redes{
+	width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+footer #secciones_footer .cont_sec .seccion .redes .red{
+	display: inline-block;;
+    width: 20px;
+    margin: 7px;
+}
+
+footer #secciones_footer .cont_sec .seccion .logo_footer{
+	width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+footer #secciones_footer .cont_sec .seccion .logo_footer img{
+	width: 200px;
+}
+
+footer #secciones_footer .titulo_footer{
+	color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+footer #secciones_footer .link{
+	width: 100%
+}
+
+footer #secciones_footer .link a{
+	color: #ffffff;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+footer #secciones_footer .cont_sec .seccion .libro_footer{
+	width: 200px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+.mob {
+	display: block;
+    float: left;
+    width: 50px;
+}
+
+.desk {
+	display: none !important;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: #ffffff;
+}	
+	
+header #marquesina {
+    font-size: 11px;
+    padding: 2px;
+}	
+	
+header #contheader #redes {
+    float: none;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}	
+
+header #contheader #logo {
+    float: none;
+    width: 100%;
+}	
+
+header #contheader #logo_header {
+    width: calc(100% - 160px);
+    margin: 0 auto;
+    padding: 0px 0;
+}	
+
+header #contheader #personal {
+    float: none;
+    width: 100%;
+}	
+	
+header #contheader #personal .sec_personal {
+    height: 30px;
+    padding: 0px 5px;
+}	
+
+header #menu {
+    float: left;
+    width: auto;
+    padding: 0px 0 0 0;
+}		
+	
+header #menu nav {
+	width: 100%;
+    height: calc(100% - 73px);
+    margin: 0px;
+    position: fixed;
+    left: -100%;
+    background-color: #ffffffeb;
+    overflow: scroll;
+    z-index: 10;
+}
+
+header #menu nav ul li {
+	display: block;
+    border-bottom: 1px solid #2c2c2c;
+    padding: 14px;
+    text-align: initial;
+}
+
+header #menu nav ul li:hover .children {
+	display: none;
+}
+	
+header #menu nav ul li .children {
+	position: relative;
+    background: none;
+    padding: 5px;
+    width: auto;
+    z-index: 1000;
+}
+
+header #menu nav ul li .children li {
+    border-bottom: none;
+}	
+	
+header #menu nav ul li .children li a {
+	margin-left: 5px;
+}		
+
+#contenedor {
+    width: 100%;
+    padding: 162px 0 0 0;
+}	
+	
+#contenedor #proximos_inicios #titulo_proximos {
+    font-size: 21px;
+}	
+
+#contenedor #proximos_inicios #cursos_cont .curso {
+    float: none;
+    width: calc(100% - 60px);
+    padding: 20px;
+    margin: 0px 30px 30px 30px;
+    background-color: #cecece;
+    border-radius: 20px;
+    box-sizing: border-box;
+}	
+
+footer #secciones_footer .cont_sec .seccion {
+    float: none;
+    width: 100%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    text-align: center;
+}	
+
+footer #secciones_footer .cont_sec .seccion .libro_footer {
+    width: 200px;
+    margin: 0 auto;
+}	
+
+footer #medios_de_pago .tarjetas .tarjeta img {
+    width: 45px;
+}	
+	
+}

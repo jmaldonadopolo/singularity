@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@media screen and (max-width: 600px) {
+
+header #menu{
+    display: block;
+    position: fixed;
+    width: 56px;
+    margin: 10px;
+    z-index: 10;
+}
+
+header #ver {
+    width: 100%;
+    height: 80px;
+	position: fixed;
+}
+
+header #ver #logoadmin {
+    width: 100%;
+    float: none; 
+}
+
+header #ver #logoadmin #admin {
+    width: 70px;
+	margin: 10px;
+}
+
+header #ver #cerrar {
+    float: none; 
+    display: none;
+}
+
+header #barra{
+	height: 0px;
+}
+
+#limalocal {
+    background-color: #43bcd1;
+}
+
+#limalocal #lateralizq {
+    float: none;
+	display: none;
+}
+
+#limalocal #menul {
+    display: block;
+    margin-top: 80px;
+}
+
+#limalocal #menul nav {
+    background-color: rgba(10, 10, 10, .85);
+	width: 90%;
+    height: 100%;
+    margin: 0px;
+    position: fixed;
+    left: -100%;
+}
+
+#limalocal #menul ul li{
+	width: 100%;
+	height: 40px;
+	padding: 10px 0px 10px 0px;
+	text-align: right;
+}
+#limalocal #menul nav ul li:hover{
+	background-color: #4c4c50;
+}
+#limalocal #menul ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 15px;
+    text-transform: uppercase;
+}
+#limalocal #menul .item{
+	padding: 10px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #4c4c50;
+}
+#limalocal #menul .seleccionado{
+	background-color: #4c4c50;
+}
+
+#limalocal #contenido {
+    width: 100%;
+	margin-top: 80px;
+	float: none;
+}
+
+#limalocal #contenido #cuadro {
+    margin: 5px auto;
+	padding: 0px 0px 30px 0px
+}
+
+#limalocal #contenido #submenu{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+    
+#limalocal #contenido #submenu ul li{
+    padding: 6px 0px 6px 10px;
+    border-bottom: 1px solid #43ccb5;
+    display: block;
+}
+    
+#limalocal #contenido #submenu ul li a{
+    text-decoration: none;
+    color: #f3ffff;
+}
+
+#limalocal #contenido #botones {
+	display: none;
+}	
+	
+}
+

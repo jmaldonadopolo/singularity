@@ -1,0 +1,545 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+input{
+	padding: 5px 10px;
+    font-weight: normal;
+    width: 400px;
+    margin-left: 10px;
+}
+
+input[type=submit]{
+	width: auto;
+    background: #d3255c;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 7px 24px;
+    border-radius: 8px;
+}
+
+.wraper_curso {
+	width: calc(100% - 210px);
+    float: left;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.wraper_curso .opciones{
+	display: flex;
+    align-items: center;
+}
+
+.wraper_curso .opciones .titulo{
+	width: 50%;
+    padding: 12px 12px 12px 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.wraper_curso .opciones .botones{
+	width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wraper_curso .opciones .botones .item_boton{
+    min-width: fit-content;
+}
+
+.wraper_curso .opciones .botones .item_boton a{
+	font-size: 13px;
+    color: #fff;
+    padding: 8px 14px;
+    background: #777777;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+.wraper_curso .opciones .botones .item_boton form{
+	display: flex;
+}
+
+.wraper_curso .opciones .botones .item_boton form input{
+	padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0px 0px 5px;
+	font-size: 10px;
+	width: auto;
+}
+
+.wraper_curso .opciones .botones .item_boton form button{
+	padding: 5px;
+    border: 1px solid #777;
+    border-radius: 0px 5px 5px 0px;
+    background: #777777;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.wraper_curso .cuadro{
+	margin: 15px;
+    padding: 20px 20px 40px 20px;
+    border: 1px solid #A0A0A0;
+    border-radius: 5px;
+}
+
+.wraper_curso .cuadro .titulo_cuadro{
+	background-color: #f7f7f7;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-family: gothic_bold;
+    margin-bottom: 12px;
+}
+
+.wraper_curso .cuadro .cursos{
+	display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 10px;
+}
+
+.wraper_curso .cuadro .cursos .titulo{
+	text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.wraper_curso .cuadro .cursos .item{
+	text-align: center;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.wraper_curso .cuadro .cursos .codigo{
+	width: 10%;
+}
+
+.wraper_curso .cuadro .cursos .nombre{
+	width: 30%;
+}
+
+.wraper_curso .cuadro .cursos .nombre a{
+	color: #000000;
+    font-weight: bold;
+}
+
+.wraper_curso .cuadro .cursos .imagen{
+	width: 10%;
+}
+
+.wraper_curso .cuadro .cursos .syllabus{
+	width: 10%;
+}
+
+.wraper_curso .cuadro .cursos .banners{
+	width: 10%;
+}
+
+.wraper_curso .cuadro .cursos .estado{
+	width: 10%;
+}
+
+.wraper_curso .cuadro .cursos .estado img{
+	width: 15px;
+}
+
+.wraper_curso .cuadro .cursos .editar{
+	width: 10%;
+}
+
+.wraper_curso .cuadro .cursos .eliminar{
+	width: 10%;
+}
+
+.wraper_curso .cuadro .cursos .boton{
+    font-size: 11px;
+    padding: 5px;
+    background: #4c4c50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	color: #ffffff;
+}
+
+.wraper_curso .cuadro .edit_producto{
+	display: flex;
+    flex-direction: column;
+}
+
+.wraper_curso .cuadro .edit_producto .linea{
+	font-size: 12px;
+    padding: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    display: grid;
+    align-items: center;
+}
+
+.wraper_curso .cuadro .edit_producto .linea label{
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.wraper_curso .cuadro .edit_producto .linea input[type=checkbox]{
+	padding: 0;
+    margin: 0;
+    width: auto;
+    margin-left: 10px;
+}
+
+.wraper_curso .cuadro .edit_producto .linea input[type=date]{
+	padding: 0;
+    margin: 0;
+    width: auto;
+    margin-left: 10px;
+}
+
+.wraper_curso .cuadro .edit_producto .linea select{
+	padding: 5px 10px;
+    font-weight: normal;
+    margin-left: 10px;
+	width: fit-content;
+}
+
+.wraper_curso .cuadro .edit_producto .especial{
+	display: flex;
+    gap: 20px;
+}
+
+.wraper_curso .cuadro .edit_producto .imagen{
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.wraper_curso .cuadro .edit_producto .imagen .titulo_icono{
+	font-weight: bold;
+}
+
+.wraper_curso .cuadro .edit_producto .imagen .dato{
+	font-size: 11px;
+    color: #d00f51;
+}
+
+.wraper_curso .cuadro .edit_producto .imagen .opcion{
+	font-size: 12px;
+}
+
+.wraper_curso .cuadro .edit_producto .imagen .icono img{
+	max-width: 220px;
+}
+
+.wraper_curso .cuadro .edit_producto .linea textarea{
+	padding: 15px;
+    margin-left: 10px;
+    width: 100%;
+    height: 200px;
+	resize: none;
+}
+
+.wraper_curso .cuadro .opciones_curso{
+	display: grid;
+    grid-template-columns: 3fr 60px 4fr 1fr;
+    align-items: end;
+}
+
+.wraper_curso .cuadro .edit{
+    grid-template-columns: 60px 1fr 1fr 1fr;
+}
+
+.wraper_curso .cuadro .tipo_curso{
+grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.wraper_curso .cuadro .modalidad{
+grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.wraper_curso .cuadro .certificacion{
+grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.wraper_curso .cuadro .opciones_curso .partar{
+	padding: 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.wraper_curso .cuadro .opciones_curso .partar .btn_azul{
+	background: #2c368b;
+    padding: 5px 13px;
+    border-radius: 5px;
+}
+
+.wraper_curso .cuadro .opciones_curso .partar .btn_rojo{
+	background: #d3255c;
+    padding: 5px 13px;
+    border-radius: 5px;
+}
+
+.wraper_curso .cuadro .opciones_curso .partar .btn_gris{
+	background: #777777;
+    padding: 5px 13px;
+    border-radius: 5px;
+}
+
+.wraper_curso .cuadro .opciones_curso .partar a{
+	color: #fff;
+}
+
+.wraper_curso .cuadro .opciones_curso .partar button{
+	padding: 9px 10px;
+    font-weight: normal;
+    color: #fff;
+    background: #777;
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.wraper_curso .cuadro .opciones_curso .btn_incluye{
+	margin: 10px;
+    background: #777777;
+    padding: 6px 21px;
+    border-radius: 5px;
+}
+
+.wraper_curso .cuadro .opciones_curso .nombre_opcion{
+    font-weight: bold;
+}
+
+.wraper_curso .cuadro .opciones_curso .icono_opcion{
+	height: 40px;
+    width: 60px;
+    background: #2c368b;
+    padding: 3px 3px;
+    text-align: center;
+}
+
+.wraper_curso .cuadro .opciones_curso img {
+	width: 35px;
+    height: auto;
+}
+
+.wraper_curso .cuadro .opciones_docente{
+	display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #a0a0a0;
+    margin-bottom: 10px;
+}
+
+.wraper_curso .cuadro .opciones_docente .linea_docente{
+	display: grid;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #a0a0a0;
+    padding-bottom: 10px;
+}
+
+.wraper_curso .cuadro .opciones_docente .linea_docente_desc{
+	display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #a0a0a0;
+    padding-bottom: 10px;
+    padding: 10px 15px 20px 15px;
+}
+
+.wraper_curso .cuadro .opciones_docente .lin3{
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.wraper_curso .cuadro .opciones_docente .linea_docente div{
+	padding: 5px 15px;
+}
+
+.wraper_curso .cuadro .opciones_docente label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.wraper_curso .cuadro .opciones_docente .linea_docente input,textarea {
+	padding: 3px 6px;
+    font-weight: normal;
+    width: 100%;
+    margin-left: 0;
+}
+
+.wraper_curso .cuadro .opciones_docente .linea_docente .foto{
+	width: 100%;
+	max-width: 300px;
+}
+
+.wraper_curso .cuadro .opciones_docente .linea_docente .anuncio{
+	padding: 10px 25px;
+    font-size: 12px;
+    color: #d3255c;
+    font-weight: bold;
+}
+
+.wraper_curso .cuadro .opciones_docente .linea_docente .btn_docente{
+	text-align: center;
+}
+
+.wraper_curso .cuadro .opciones_docente .linea_docente .btn_docente button,.btn_adocente{
+	background: #777;
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.wraper_curso .cuadro .opciones_docente .linea_docente .btn_docente button{
+	background: #d3255c;
+}
+
+.wraper_curso .cuadro .item_curso{
+	padding: 15px 20px;
+    border-bottom: 2px solid #2c368b;
+    font-size: 12px;
+}
+
+.wraper_curso .cuadro .item_curso .linea_curso {
+	padding: 10px 0px;
+}
+
+.wraper_curso .cuadro .item_curso .linea_curso .titulo{
+	padding: 5px 15px;
+    font-weight: bold;
+}
+
+.wraper_curso .cuadro .item_curso .linea_curso .contenido input {
+	width: 100%;
+	margin: 0;
+}
+
+.wraper_curso .cuadro .item_curso input[type=checkbox] {
+	width: 30px;
+	margin: 0;
+}
+
+.wraper_curso .cuadro .mensaje{
+	text-align: center;
+    background: #616269;
+    padding: 6px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.wraper_curso .cuadro .boton_syl{
+	text-align: center;
+    margin: 20px;
+}
+
+.wraper_curso .cuadro .boton_syl a{
+	color: #fff;
+    padding: 8px 14px;
+    background: #777777;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.wraper_curso .cuadro .vacio{
+	text-align: center;
+    padding: 20px;
+}
+
+.wraper_curso .cuadro .banner{
+	width: 100%;
+}
+
+.wraper_curso .cuadro .banner .botonera{
+	display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.wraper_curso .cuadro .banner .botonera a{
+	color: #fff;
+    padding: 8px 14px;
+    background: #777777;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin: 5px 10px;
+}
+
+.wraper_curso .cuadro .docentes{
+	display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.wraper_curso .cuadro .titulo{
+	text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 6px 10px;
+}
+
+.wraper_curso .cuadro .docente{
+	text-align: center;
+    font-size: 13px;
+    padding: 6px 10px;
+}
+
+.wraper_curso .cuadro .docente .btn{
+	color: #fff;
+    padding: 4px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 10px;
+	background: #777777;
+}
+
+.wraper_curso .cuadro .docente ._azul{
+	background: #2c368b;
+}
+
+.wraper_curso .cuadro .docente ._rojo{
+	background: #d3255c;
+}
+
+.wraper_curso .cuadro .docente img{
+	padding: 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+}

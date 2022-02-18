@@ -1,0 +1,67 @@
+RewriteEngine on
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php56” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddType application/x-httpd-ea-php56___lsphp .php .php5 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php5_module>
+   php_flag asp_tags Off
+   php_flag display_errors Off
+   php_value max_execution_time 90
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit 128M
+   php_value post_max_size 8M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/tmp"
+   php_value upload_max_filesize 50M
+   php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Images
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Video
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType video/mpeg "access plus 1 year"
+
+  # CSS, JavaScript
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+
+  # Others
+  ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType application/x-shockwave-flash "access plus 1 month"
+</IfModule>
+
+RewriteCond %{HTTP_REFERER} !^http://singularityperu.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://singularityperu.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.singularityperu.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://singularityperu.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://singularityperu.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://singularityperu.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.singularityperu.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.singularityperu.com$      [NC]
+#RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ https://www.singularityperu.com [R,NC]
+
+RewriteCond %{HTTP_HOST} singularityperu\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.singularityperu.com/$1 [R,L]
+
